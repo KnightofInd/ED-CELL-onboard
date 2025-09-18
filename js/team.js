@@ -165,11 +165,11 @@ class TeamPage {
     }
   }
 
-  // Setup card click effects
+  // Setup card click effects - DISABLED for now
   setupCardClickEffect(card) {
-    card.addEventListener('click', () => {
-      this.showTeamMemberDetails(card);
-    });
+    // Click functionality temporarily removed
+    // Will be added later as requested by user
+    card.style.cursor = 'default';
   }
 
   // Show team member details modal

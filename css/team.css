@@ -150,8 +150,8 @@
 /* Card Image */
 .card-image {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto var(--spacing-md);
   border-radius: 50%;
   overflow: hidden;
@@ -170,36 +170,7 @@
   transform: scale(1.1);
 }
 
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, var(--primary-blue), var(--accent-orange));
-  opacity: 0;
-  transition: var(--transition-normal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 1.5rem;
-}
-
-.team-card:hover .image-overlay {
-  opacity: 0.8;
-}
-
-.image-overlay::after {
-  content: '👋';
-  animation: wave 0.5s ease-in-out infinite;
-}
-
-@keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(20deg); }
-  75% { transform: rotate(-10deg); }
-}
+/* Image overlay removed for cleaner look */
 
 /* Card Content */
 .card-content h3 {
@@ -213,6 +184,47 @@
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: var(--spacing-md);
+}
+
+/* Placeholder Cards */
+.placeholder-card .placeholder-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(192, 192, 192, 0.05));
+  border: 2px dashed #c0c0c0;
+}
+
+.placeholder-content {
+  text-align: center;
+  color: #c0c0c0;
+}
+
+.placeholder-text {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.role-tag.placeholder {
+  background: linear-gradient(135deg, rgba(192, 192, 192, 0.3), rgba(192, 192, 192, 0.1));
+  color: #c0c0c0;
+  border: 1px dashed #c0c0c0;
+}
+
+.role-tag.leader {
+  background: linear-gradient(135deg, var(--accent-red), #C62828);
+  color: var(--white);
+}
+
+.role-tag.ambassador {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
+  color: var(--white);
+}
+
+.role-tag.event-manager {
+  background: linear-gradient(135deg, var(--accent-orange), #E65100);
+  color: var(--white);
 }
 
 /* Role Tags */
@@ -496,8 +508,8 @@
   }
 
   .card-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .team-contact {
@@ -523,8 +535,8 @@
   }
 
   .card-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
   }
 
   .team-card .social-links a {
