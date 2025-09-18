@@ -109,6 +109,13 @@
   margin-top: var(--spacing-xl);
 }
 
+/* Center alignment for single cards */
+.team-grid-center {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+}
+
 /* Team Cards */
 .team-card {
   background: linear-gradient(135deg, #1a237e, #0d47a1);
